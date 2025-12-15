@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANF Visuals | Premium Video Production</title>
+  <meta name="description" content="ANF Visuals creates high-impact promo videos that help brands stand out. Professional video production services from concept to final delivery.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="canonical" href="https://anfvisuals.com" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="#" class="logo">
+          <span class="logo-icon">ANF</span>
+          <span class="logo-text">Visuals</span>
+        </a>
+        <div class="nav-links">
+          <a href="#work">Work</a>
+          <a href="#services">Services</a>
+          <a href="#process">Process</a>
+          <a href="#contact" class="btn btn-primary">Get a Quote</a>
+        </div>
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="eyebrow">Premium Video Production</span>
+        <h1>Transform Your Brand with <span class="highlight">Captivating</span> Video Content</h1>
+        <p class="lead">We create high-impact promo videos that help businesses stand out, engage audiences, and drive results.</p>
+        <div class="cta-group">
+          <a href="#contact" class="btn btn-primary">Start Your Project</a>
+          <a href="#work" class="btn btn-outline">View Our Work</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-overlay"></div>
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="assets/hero-bg.mp4" type="video/mp4">
+    </video>
+  </section>
+
+  <!-- Work Showcase -->
+  <section id="work" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Our Portfolio</span>
+        <h2>Recent Projects</h2>
+      </div>
+      <div class="portfolio-grid">
+        <!-- Project 1 -->
+        <div class="portfolio-item">
+          <div class="portfolio-image">
+            <img src="assets/project1-thumb.jpg" alt="Project 1">
+            <div class="portfolio-overlay">
+              <h3>Brand Campaign</h3>
+              <p>Client: TechStart</p>
+              <a href="#" class="btn btn-outline">View Case Study</a>
+            </div>
+          </div>
+        </div>
+        <!-- More project items... -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section bg-light">
+    <div class="container">
+      <div class="section-header center">
+        <span class="eyebrow">What We Do</span>
+        <h2>Our Services</h2>
+        <p class="section-subtitle">End-to-end video production solutions tailored to your needs</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🎥</div>
+          <h3>Promo Videos</h3>
+          <p>Engaging promotional content that tells your brand's story and drives action.</p>
+        </div>
+        <!-- More service cards... -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section id="process" class="section">
+    <div class="container">
+      <div class="section-header center">
+        <span class="eyebrow">Our Approach</span>
+        <h2>How We Work</h2>
+      </div>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-number">01</div>
+          <h3>Discovery</h3>
+          <p>We learn about your goals, audience, and vision to create a strategy that works.</p>
+        </div>
+        <!-- More process steps... -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section bg-dark">
+    <div class="container">
+      <div class="testimonial-slider">
+        <!-- Testimonial items... -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h2>Ready to create something amazing?</h2>
+          <p>Let's discuss how we can help bring your vision to life.</p>
+          <div class="contact-details">
+            <a href="mailto:hello@anfvisuals.com" class="contact-link">
+              <span class="icon">✉️</span>
+              <span>hello@anfvisuals.com</span>
+            </a>
+            <a href="tel:+6512345678" class="contact-link">
+              <span class="icon">📱</span>
+              <span>+65 1234 5678</span>
+            </a>
+          </div>
+        </div>
+        <form id="contact-form" class="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" name="name" required>
+            <label for="name">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" required>
+            <label for="email">Email Address</label>
+          </div>
+          <div class="form-group">
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Select a service</option>
+              <option value="promo">Promo Video</option>
+              <option value="social">Social Media Content</option>
+              <option value="corporate">Corporate Video</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <label for="message">Tell us about your project</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <span class="logo-icon">ANF</span>
+            <span class="logo-text">Visuals</span>
+          </a>
+          <p>ANF Visuals - Creating impactful video content that drives results for brands worldwide.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram">
+              <span class="sr-only">Instagram</span>
+              <span>📸</span>
+            </a>
+            <!-- More social links... -->
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-links-group">
+            <h4>Company</h4>
+            <a href="#">About Us</a>
+            <a href="#work">Work</a>
+            <a href="#services">Services</a>
+            <a href="#process">Process</a>
+          </div>
+          <!-- More link groups... -->
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> ANF Visuals. All rights reserved.</p>
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
